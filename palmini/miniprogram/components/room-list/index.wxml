@@ -1,0 +1,14 @@
+<!--components/room-list/index.wxml-->
+<view class="room-list-wrap wr-class" id="{{independentID}}">
+	<block wx:for="{{roomList}}" wx:for-item="item" wx:key="index">
+		<room-card
+		  id="{{independentID}}-room-{{index}}"
+		  data="{{item}}"
+		  thresholds="{{thresholds}}"
+		  class="room-card-inside"
+		  data-index="{{index}}"
+		  bind:thumb="onClickRoomThumb"
+		  bind:click="onClickRoom"
+		/>
+	</block>
+</view>

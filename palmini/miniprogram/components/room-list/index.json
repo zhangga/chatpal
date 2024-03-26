@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "room-card": "/components/room-card/index"
+  }
+}

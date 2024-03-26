@@ -1,0 +1,25 @@
+<!--components/room-card/index.wxml-->
+<view id="{{independentID}}"
+  class="room-card"
+  bind:tap="clickHandle"
+  data-room="{{ room }}">
+
+  <view class="room-card__main">
+    <view class="room-card__thumb" bind:tap="clickThumbHandle">
+			<t-image
+			  wx:if="{{ !!room.image }}"
+			  t-class="room-card__img"
+			  src="{{ room.image }}"
+			  mode="aspectFill"
+			  lazy-load
+			/>
+		</view>
+    <view class="room-card__body">
+      <view class="room-card__upper">
+        <view wx:if="{{ room.name }}" class="room-card__title">
+					{{ room.name }}
+				</view>
+      </view>
+    </view>
+  </view>
+</view>

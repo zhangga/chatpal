@@ -1,4 +1,6 @@
 // app.ts
+import updateManager from './utils/update';
+
 App<IAppOption>({
   globalData: {
   },
@@ -30,9 +32,7 @@ App<IAppOption>({
       }
     })
   },
-  sendSocketMessage(msg) {
-    wx.sendSocketMessage({
-      data: msg
-    })
+  onShow() {
+    // updateManager();
   },
 })

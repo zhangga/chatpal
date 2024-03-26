@@ -1,6 +1,7 @@
 // pages/lobby/lobby.ts
 import { Room } from '../../models/room';
 import { fetchHome } from '../../services/home/home';
+import Toast from 'tdesign-miniprogram/toast/index';
 
 interface PageData {
   pageLoading: boolean;
@@ -103,5 +104,9 @@ Page<PageData>({
         pageLoading: false,
       });
     });
+  },
+
+  navToSearchPage() {
+    wx.navigateTo({ url: '/pages/search/index' });
   },
 })

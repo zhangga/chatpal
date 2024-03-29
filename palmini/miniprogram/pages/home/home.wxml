@@ -25,3 +25,11 @@
   />
   <t-toast id="t-toast" />
 </view>
+
+<view class="back-to-top" bindtap="onBackToTop">
+  <image src="/images/icon_back-to-top.png" class="back-to-top-icon"></image>
+</view>
+
+<view class="create-room-btn" bind:tap="onCreateRoomBtnClick">
+  <image src="/images/icon_createroom.png" class="button-icon"></image>
+</view>

@@ -11,7 +11,7 @@ export function fetchHome(): Promise<{roomList: Room[]}> {
 }
 
 function mockFetchHome() {
-  const { delay } = require('../_utils/delay');
+  const { delay } = require('../utils/delay');
   const { genSwiperRoomList } = require('../../models/swiper');
   return delay(3000).then(() => {
     return {

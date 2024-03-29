@@ -109,4 +109,18 @@ Page<PageData>({
   navToSearchPage() {
     wx.navigateTo({ url: '/pages/search/index' });
   },
+
+  onCreateRoomBtnClick() {
+    console.log("======= click create room button");
+    wx.switchTab({
+      url: '/pages/room-create/index', // 创建房间
+    });
+  },
+
+  onBackToTop() {
+    wx.pageScrollTo({
+      scrollTop: 0,
+      duration: 300 // 滚动动画的时长，单位 ms
+    });
+  }
 })

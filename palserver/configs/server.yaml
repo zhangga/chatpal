@@ -1,0 +1,26 @@
+server:
+  addr: 0.0.0.0:10008
+  cert: ""
+  key: ""
+  appId: "wxbd8f4a305320e623"
+  appSecret: "8c65a54a9b9d6ee0b5fe6d1770b7d055"
+
+redis:
+  cluster: false
+  addrList:
+    - 127.0.0.1:6379
+  password: ""
+  poolSize: 20
+  minIdleConns: 5
+  maxRetries: 3
+  dialTimeout: 5s
+  readTimeout: 3s
+  writeTimeout: 3s
+
+log:
+  fileName: app
+  isShowInConsole: true
+  isJsonEncoder: false
+  level: debug
+  maxSize: 200
+  maxAge: 15

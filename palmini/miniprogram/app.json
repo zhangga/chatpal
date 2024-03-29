@@ -1,10 +1,12 @@
 {
   "pages": [
-    "pages/home/home",
+    "pages/loading/index",
     "pages/index/index",
+    "pages/home/home",
     "pages/logs/logs",
     "pages/search/index",
-    "pages/usercenter/index"
+    "pages/usercenter/index",
+    "pages/room-create/index"
   ],
   "tabBar": {
     "custom": true,

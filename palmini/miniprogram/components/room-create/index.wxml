@@ -1,0 +1,20 @@
+<!--components/room-create/index.wxml-->
+<view class="modal" wx:if="{{showModal}}">
+  <view class="modal-content">
+    <view class="modal-header">创建房间</view>
+    <view class="modal-body">
+      <view class="input-group">
+        <text>房间名:</text>
+        <input type="text" placeholder="请输入房间名" bindinput="inputRoomName"/>
+      </view>
+      <text>房间描述:</text>
+      <view class="input-container">
+        <textarea class="input-textarea" auto-height maxlength="5000" placeholder="请输入房间描述..." bindinput="inputRoomDesc"></textarea>
+      </view>
+    </view>
+    <view class="modal-footer">
+      <button bindtap="cancel">取消</button>
+      <button bindtap="confirm">确认</button>
+    </view>
+  </view>
+</view>

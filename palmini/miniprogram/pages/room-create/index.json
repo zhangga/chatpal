@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "create-room-modal": "/components/room-create/index"
+  }
+}

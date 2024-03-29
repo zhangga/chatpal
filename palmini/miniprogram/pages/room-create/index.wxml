@@ -1,0 +1,4 @@
+<!--pages/room-create/index.wxml-->
+<text>欢迎创建房间</text>
+<text>来为您的房间添加一个详细的描述吧！</text>
+<create-room-modal showModal="{{showCreateRoomModal}}" />
